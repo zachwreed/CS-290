@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		label {
+			border: 1px black;
+		}
+		form {
+			border: 1px black;
+		}
+		section {
+			border: 1px black;
+			}
+	</style>
+	<meta charset="UTF-8"></meta>
+	<head>
+		<title>Open Weather Map Example</title>
+	</head>
+	<body>
+		<h1>Open Weather Map</h1>
+		
+	
+	<form>
+		<legend>Open Weather Map</legend>
+		<fieldset>
+			<section class ="radio">
+				<p>Choose one of the following to submit via GET.</p>
+				<label><input type = "radio" name="w_in" value="rCity" id ="rCity"/>City</label>
+				<label><input type = "radio" name="w_in" value="rZip" id = "rZip" />Zip</label>
+			</section>
+			<br/>
+			<p>Enter the value in the respective input below.</p>
+			<label>Zip Code:<input type = "text" name ="Zip" id = "zip"></label>
+			<br/>
+			<label>City Name:<input type = "text" name = "City" id = "city"></label>
+			<br/>
+			<label><input type = "submit" name = "Submit" id = "submit"></label>
+		</fieldset>
+	</form>
+	
+	<h2>Return from Open Weather Map</h2>
+	<p>Temperature: </p>
+	<p id = "temp"></p>
+		<p>Humidity: </p>
+	<p id = "humidity"></p>
+		<p>Wind Speed: </p>
+	<p id = "wind_speed"></p>
+	</body>
+	<script src = "get_req.js"></script>
+</html>

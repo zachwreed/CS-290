@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8"></meta>
+	<style>
+		form { border: 1px;}
+		label {boder: 1px;}
+	</style>
+	<head>
+		<title>Ajax Interactions</title>
+	</head>
+	
+	<body>		
+	<h1>Ajax Interactions</h1>
+	<form>
+		<legend>Some Information You Shouldn't Submit on a Form</legend>
+		<fieldset>
+			<label>Credit Card Number:
+				<input type="text" id = "card_num" name="card_num" size="30" maxlength="20">
+			</label>
+			<br/>
+			<label>Expiration Date (mmyy):
+				<input type="text" id = "exp_num" name="exp_num" size="30" maxlength="4">
+			</label>
+			<br/>
+			<label>Security Code:
+				<input type="text" id = "sec_num" name ="sec_num" size="30" maxlength="3">
+			</label>
+			<br/>
+			
+			<label>
+				<input type= "submit" id = "submit_button" name = "Submit"/>
+			</label>
+			<br/>
+		</fieldset>
+	</form>
+
+	<h2>Response from httpbin.org</h2>
+	<p>Card Number: </p>
+	<p id = "card_num_ret">blank</p>
+	<p> Expiration Date:</p>
+	<p id = "exp_num_ret"></p>
+	<p> Security Code: </p>
+	
+	<p>  <label id = "sec_num_ret">Text</label></p>
+	<script src ="post_req.js"></script>
+	</body>
+	
+</html>
